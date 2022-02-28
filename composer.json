@@ -1,0 +1,32 @@
+{
+    "name": "mugennsou/laravel-octane-extension",
+    "description": "",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "MA JIAN",
+            "email": "mj501738931@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mugennsou\\LaravelOctaneExtension\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mugennsou\\LaravelOctaneExtension\\OctaneExtensionServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "laravel/octane": "^1.2",
+        "spatie/laravel-package-tools": "^1.10"
+    }
+}
