@@ -32,7 +32,7 @@ class StatusCommand extends Command
      */
     public function handle(): int
     {
-        $server = $this->option('server') ?: config('octane-extension.server');
+        $server = $this->option('server') ?: config('octane.server');
 
         try {
             return $this->call(sprintf('octane-extension:status-%s', $server));

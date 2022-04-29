@@ -46,9 +46,6 @@ class InstallCommand extends Command
                     if ($installed) {
                         $this->updateEnvironmentFile($server);
 
-                        $this->callSilent('vendor:publish', ['--tag' => 'octane-config', '--force' => true]);
-                        $this->callSilent('vendor:publish', ['--tag' => 'octane-extension-config', '--force' => true]);
-
                         $this->info('Octane extension installed successfully.');
                     }
                 }
