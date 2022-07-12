@@ -55,7 +55,7 @@ trait InstallsDependencies
         }
 
         try {
-            $process->run(fn($type, $line) => $this->output->write($line));
+            $process->run(fn ($type, $line) => $this->output->write($line));
         } catch (ProcessSignaledException $e) {
             if (extension_loaded('pcntl') && $e->getSignal() !== SIGINT) {
                 throw $e;

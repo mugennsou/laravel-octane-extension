@@ -34,6 +34,7 @@ class InstallCommand extends Command
      */
     public function handle(): int
     {
+        /** @var string $server */
         $server = $this->option('server')
             ?: $this->choice('Which application server you would like to use?', ['amphp']);
 
@@ -62,6 +63,7 @@ class InstallCommand extends Command
      */
     public function installAmphpServer(): bool
     {
+        // @phpstan-ignore-next-line
         $amphpInstalled = $this->isPackageInstalled(OctaneExtensionAmphpServiceProvider::class);
 
         if ($amphpInstalled) {

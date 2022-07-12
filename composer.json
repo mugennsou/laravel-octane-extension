@@ -28,5 +28,9 @@
         "php": "^8.1",
         "laravel/octane": "^1.2",
         "spatie/laravel-package-tools": "^1.10"
+    },
+    "require-dev": {
+        "mugennsou/php-cs-fixer-config": "^0.0.1",
+        "phpstan/phpstan": "^1.8"
     }
 }
